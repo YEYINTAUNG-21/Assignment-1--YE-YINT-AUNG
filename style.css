@@ -35,6 +35,7 @@ html ::-webkit-scrollbar-thumb {
 
 body {
     margin: 0;
+    background: black;
 }
 
 .header {
@@ -96,6 +97,10 @@ body {
     transform-origin: top;
 }
 
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
 .header .search-form input {
     height: 100%;
     width: 100%;
@@ -123,6 +128,10 @@ body {
     width: 35rem;
     background: white;
     padding:0 1.5rem;
+}
+
+.header .cart-items-container.active {
+    right: 0;
 }
 
 .header .cart-items-container .cart-items {
@@ -200,25 +209,7 @@ body {
         background: 30rem;
         height: calc(100vh - 9.5rem);
     }
-    .header .navbar a{
-        color: black;
-        display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
-    }
-    #menu-icon {
-        display: inline-block;
-    }
-    .header .navbar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: white;
-        background: 30rem;
-        height: calc(100vh - 9.5rem);
-    }
-    .header .navbar .active {
+    .header .navbar.active {
         right: 0;
     }
     .header .navbar a{
@@ -228,5 +219,8 @@ body {
         padding: 0.5rem;
         font-size: 2rem;
     }
+    .header .search-form {
+        width: 90%;
+        right: 2rem
+    }
 }
-
