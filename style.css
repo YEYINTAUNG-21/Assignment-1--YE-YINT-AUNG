@@ -1,3 +1,26 @@
+html {
+    font-size: 62.5%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-padding-top: 9rem; /* Add padding to the top of the viewport when scrolling to an anchor link */
+    scroll-behavior: smooth;
+}
+
+/* Style the scrollbar track */
+html ::-webkit-scrollbar {
+    width: 0.8rem; 
+}
+
+/* Style the scrollbar track */
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Style the scrollbar thumb */
+html ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5rem; 
+}
+
 * {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -158,3 +181,52 @@ body {
     width: 100%;
     text-align: center;
 }
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: white;
+        background: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar a{
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: white;
+        background: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar .active {
+        right: 0;
+    }
+    .header .navbar a{
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
+
