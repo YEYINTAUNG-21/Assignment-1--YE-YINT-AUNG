@@ -1,6 +1,17 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -17,44 +28,36 @@ body {
     z-index: 1000;
 }
 
-.logo img {
-    width: 110px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header .logo img {
+    height: 6rem;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color:white;
-    font-size: 25px;
+.header .navbar a {
+    margin: 0.1rem;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.5rem 1rem;
 }
 
 .navbar a:hover {
     color:chartreuse;
-
+    border-bottom: 0.1rem solid chartreuse;
+    padding-bottom: 0.5rem;
 }
 
-.icons {
-    display: flex;
-    gap: 40px;
-}
-
-.icons .fas {
-    font-size: 20px;
+.header .icons div{
     color: white;
     cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
 }
 
-.icons .fas:hover {
+.header .icons div:hover {
     color: chartreuse;
+}
+
+#menu-icon {
+    display: none;
 }
 
 .header .search-form {
@@ -87,4 +90,71 @@ body {
 
 .header .search-form label:hover {
     color: chartreuse;
+}
+
+.header .cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem); /* Compute the value based on the viewport height and a fixed value in "rem" */
+    width: 35rem;
+    background: white;
+    padding:0 1.5rem;
+}
+
+.header .cart-items-container .cart-items {
+    position: relative;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .cart-items-container .cart-items .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.header .cart-items-container .cart-items .fa-times:hover {
+    color: chartreuse;
+}
+
+.header .cart-items-container .cart-items img {
+    width: 7rem; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+.header .cart-items-container .cart-items .content h3 {
+    font-size: 2rem;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-items .content .price {
+    font-size: 1.5rem;
+    color: chartreuse;
+}
+
+.Button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: white;
+    background: chartreuse;
+    cursor: pointer;
+}
+
+.Button:hover {
+    letter-spacing: 0.2rem;
+}
+
+.header .cart-items-container .Button {
+    width: 100%;
+    text-align: center;
 }
