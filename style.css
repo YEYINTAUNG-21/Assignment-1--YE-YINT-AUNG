@@ -10,6 +10,11 @@ body {
     padding: 15px 20px;
     background-color:darkgreen;
     box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .logo img {
@@ -54,20 +59,20 @@ body {
 
 .header .search-form {
     position: absolute;
-    background: white;
     top: 115%; 
     right: 7%;
-    display: flex;
-    align-items: center;
+    background: white;
     width: 50rem;
     height: 5rem;
+    display: flex;
+    align-items: center;
     transform: scaleY(0);
     transform-origin: top;
 }
 
 .header .search-form input {
-    width: 100%;
     height: 100%;
+    width: 100%;
     font-size: 1.6rem;
     color: black;
     padding: 1rem;
@@ -78,7 +83,6 @@ body {
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: black;
 }
 
 .header .search-form label:hover {
