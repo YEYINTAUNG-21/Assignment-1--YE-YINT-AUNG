@@ -14,6 +14,7 @@ html ::-webkit-scrollbar {
     width: 0.8rem; 
 }
 
+
 /* Style the scrollbar track */
 html ::-webkit-scrollbar-track {
     background: transparent;
@@ -63,9 +64,10 @@ body {
 
 .header .navbar a {
     margin: 0.1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
 }
 
 .navbar a:hover {
