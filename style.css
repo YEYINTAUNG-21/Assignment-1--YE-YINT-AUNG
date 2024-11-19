@@ -1,5 +1,9 @@
+/* Header */
+
 html {
-    font-size: 62.5%;
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     scroll-padding-top: 9rem; /* Add padding to the top of the viewport when scrolling to an anchor link */
     scroll-behavior: smooth;
@@ -35,7 +39,8 @@ html ::-webkit-scrollbar-thumb {
 
 body {
     margin: 0;
-    background: black;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .header {
@@ -224,3 +229,55 @@ body {
         right: 2rem
     }
 }
+
+/* Banner Section */
+
+.banner-section {
+    background: url('Banner Background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.banner-section .carousel-item {
+    padding:3rem 0;
+    height: 90vh;
+}
+
+.banner-section .carousel-caption {
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.banner-section .carousel-caption h3 {
+    padding : 0.5rem 1.5rem;
+    background-color: black;
+    display: inline;
+    color: white;
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.banner-section .carousel-caption p {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: black;
+    margin-top: 1rem;
+}
+
+.banner-section .carousel-caption h1 {
+    font-size:  9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: black;
+}
+
+
