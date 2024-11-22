@@ -251,7 +251,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .banner-section .carousel-item {
@@ -319,7 +319,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;  /* Light background for the section */
-    padding: 40px 0;  /* Padding around the section */
+    padding: 10rem 0;  /* Padding around the section */
 }
 
 .features-container {
@@ -381,8 +381,8 @@ body {
     border-radius: 10px;
     width: 250px;
     transition: box-shadow 0.3s ease;
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Ensures text color inherits from parent without link coloring */
+    text-decoration: none; 
+    color: inherit;
 }
 
 .feature-card:hover, .feature-card:focus {
@@ -390,4 +390,54 @@ body {
     cursor: pointer;
 }
 
+/* About Section */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5rem 2rem;
+    background: url('/About Background.png') no-repeat right center;
+    background-size: cover;
+    min-height: 90vh;
+    color: #333;
+}
+
+.about-container {
+    max-width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: black;
+}
+
+
+@media (max-width: 991px) {
+    .about-container {
+        max-width: 55%; 
+        padding: 15px; 
+    }
+
+    .about-container h1 {
+        font-size: 2rem; 
+    }
+
+    .about-container p {
+        font-size: 1.5rem; 
+    }
+}
 
