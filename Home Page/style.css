@@ -296,10 +296,10 @@ body {
 
 @media (max-width:991px) {
     .banner-section{
-        min-height: 70vh;
+        min-height: 100vh;
     }
     .banner-section .carousel-item {
-        height: 70vh;
+        height: 100vh;
     }
     .banner-section .carousel-caption h3 {
         font-size: 2.5rem;
@@ -441,3 +441,79 @@ body {
     }
 }
 
+/* Product Section */
+
+.menu {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box; 
+}
+
+.menu .heading {
+    text-align: center;
+    margin: 3rem 2rem;
+    font-size: 3rem;
+}
+
+.menu .menu-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: stretch; 
+}
+
+.menu .menu-container .box {
+    flex: 0 0 23%;  
+    margin: 1%;  
+    padding: 1rem;  
+    text-align: center; 
+    border: 0.1rem solid black;  
+    background-color: rgba(255, 255, 255, 0.9);  
+    border-radius: 10px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    min-height: 350px;  
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+
+.menu .menu-container .box:hover,
+.menu .menu-container .box:active {
+    background-color: #f0f0f0; 
+    border-color: chartreuse; 
+}
+
+.menu .menu-container .box img {
+    max-height: 200px; 
+    width: auto;
+    object-fit: cover;
+}
+
+.menu .menu-container .box h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+.menu .menu-container .box .price {
+    font-size: 1.2rem; 
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 991px) { 
+    .menu .menu-container {
+        justify-content: center;
+    }
+
+    .menu .menu-container .box {
+        flex: 0 0 48%; 
+        margin: 1%; 
+    }
+
+    .menu .menu-container .box img {
+        max-height: 120px; 
+    }
+
+    .menu .menu-container .box h3,
+    .menu .menu-container .box .price {
+        font-size: 1rem; /
+    }
+}
