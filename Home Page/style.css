@@ -179,7 +179,7 @@ body {
     color: chartreuse;
 }
 
-.Button {
+.button {
     margin-top: 1rem;
     display: inline-block;
     padding: 0.9rem 3rem;
@@ -187,6 +187,7 @@ body {
     color: white;
     background: chartreuse;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .Button:hover {
@@ -198,44 +199,55 @@ body {
     text-align: center;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     html {
         font-size: 55%;
     }
+
     .header {
         padding: 1.5rem 2rem;
     }
+
     #menu-icon {
         display: inline-block;
     }
+
     .header .navbar {
         position: absolute;
-        top: 100%;
-        right: -100%;
+        top: 100%; 
+        right: -100%; 
         background: white;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
+        width: 30rem; 
+        height: calc(100vh - 9.5rem); 
+        flex-direction: column;
+        align-items: center;
     }
+
     .header .navbar.active {
-        right: 0;
+        right: 0; 
     }
-    .header .navbar a{
+
+    .header .navbar a {
         color: black;
-        display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
+        display: block; 
+        margin: 0.5rem 1rem; 
+        padding: 0.5rem 1rem; 
+        font-size: 2rem; 
+        text-align: center;
+        margin: 0;
     }
+    
     .header .search-form {
-        width: 90%;
-        right: 2rem
+        width: 90%; 
+        right: 2rem; 
     }
 }
+
 
 /* Banner Section */
 
 .banner-section {
-    background: url('Banner Background.jpg');
+    background: url('/Banner Background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -300,4 +312,82 @@ body {
         font-size: 6rem;
     }
 }
+
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;  /* Light background for the section */
+    padding: 40px 0;  /* Padding around the section */
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Centering the container */
+}
+
+
+.feature-icon {
+    background-color: #4CAF50; /* Green background for the icon */
+    color: white;  /* White color for the icon */
+    border-radius: 50%;
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Space between icon and text */
+    font-size: 30px; /* Size of the icon */
+}
+
+.feature-text {
+    font-size: 16px; /* Text size for the description */
+    color: #333; /* Dark grey for text */
+}
+
+@media (max-width: 991px) {
+    .feature-card {
+        width: 80%; /* Full width on smaller screens */
+        margin: 10px auto; /* Centering the card on smaller screens */
+    }
+}
+
+.feature-icon {
+    background-color: #4CAF50; /* Original green background */
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 250px;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures text color inherits from parent without link coloring */
+}
+
+.feature-card:hover, .feature-card:focus {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
 
