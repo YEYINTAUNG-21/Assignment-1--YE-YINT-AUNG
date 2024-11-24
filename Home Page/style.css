@@ -593,20 +593,20 @@ body {
 
 @media (max-width: 768px) {
     .testimonial {
-        flex-direction: column; /* Stacked layout for phone view */
-        text-align: center; /* Center-align all text */
+        flex-direction: column; 
+        text-align: center; 
         padding: 15px;
     }
 
     .testimonial-image {
-        width: 100%; /* Full width for small screens */
-        height: auto; /* Dynamic height based on content */
+        width: 100%; 
+        height: auto; 
         margin-bottom: 10px;
     }
 
     .testimonial-text {
         padding: 15px;
-        font-size: 14px; /* Reduce text size for smaller screens */
+        font-size: 14px;
     }
 
     .testimonial-text small {
@@ -616,7 +616,7 @@ body {
 
 @media (max-width: 480px) {
     .testimonial-image {
-        height: 150px; /* Smaller height for very small screens */
+        height: 150px;
     }
 
     .testimonial-text {
@@ -626,5 +626,110 @@ body {
 
     .testimonial-text small {
         font-size: 12px;
+    }
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: #092c39;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    flex: 1 1 250px; 
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-column p,
+.footer-column ul {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #4caf50; 
+}
+
+.newsletter-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+.social-icons a {
+    color: white;
+    margin: 0 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4caf50;
+}
+
+
+.footer-bottom {
+    background-color: #4caf50;
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#subscriptionMessage{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+
+    .newsletter-input {
+        width: 100%;
     }
 }
