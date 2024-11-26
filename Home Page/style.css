@@ -318,8 +318,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;  /* Light background for the section */
-    padding: 10rem 0;  /* Padding around the section */
+    background-color: #f0f0f0;  
+    padding: 10rem 0; 
 }
 
 .features-container {
@@ -351,8 +351,8 @@ body {
 
 @media (max-width: 991px) {
     .feature-card {
-        width: 80%; /* Full width on smaller screens */
-        margin: 10px auto; /* Centering the card on smaller screens */
+        width: 80%; 
+        margin: 10px auto; 
     }
 }
 
