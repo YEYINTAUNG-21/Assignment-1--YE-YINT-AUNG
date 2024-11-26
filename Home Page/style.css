@@ -318,8 +318,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;  
-    padding: 10rem 0; 
+    background-color: #f0f0f0;  /* Light background for the section */
+    padding: 10rem 0;  /* Padding around the section */
 }
 
 .features-container {
@@ -349,15 +349,7 @@ body {
     color: #333; /* Dark grey for text */
 }
 
-@media (max-width: 991px) {
-    .feature-card {
-        width: 80%; 
-        margin: 10px auto; 
-    }
-}
-
-/* Features Section */
-
+/* Base style for the icons */
 .feature-icon {
     background-color: #4CAF50; /* Original green background */
     color: white;
@@ -383,13 +375,38 @@ body {
     border-radius: 10px;
     width: 250px;
     transition: box-shadow 0.3s ease;
-    text-decoration: none; 
-    color: inherit;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures text color inherits from parent without link coloring */
 }
 
 .feature-card:hover, .feature-card:focus {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .feature-card {
+        width: 45%; /* Two cards per row on tablets */
+    }
+}
+
+/* For phones (≤ 575px) */
+@media (max-width: 575px) {
+    .features-container {
+        justify-content: space-between;
+    }
+    .feature-card {
+        width: 45%; /* Two cards per row */
+        margin: 10px; /* Add spacing between cards */
+    }
+    .feature-icon {
+        width: 60px; /* Smaller icon */
+        height: 60px;
+        font-size: 20px; /* Smaller font size */
+    }
+    .feature-text {
+        font-size: 14px; /* Adjust text size for smaller screens */
+    }
 }
 
 /* About Section */
