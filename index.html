@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm Fresh Bites</title>
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="Normalize.css">
     <!-- CSS File Link -->
     <link rel="stylesheet" href="style.css">
      <!-- Google Fonts Link-->
@@ -20,16 +22,16 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <img src="/Logo.png" alt="Farm Fresh Bites">
         </a>
 
         <nav class="navbar">
-            <a href="/Home Page/index.html">Home</a>
-            <a href="/About Page/About.html">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Gallary.html">Gallery</a>
+            <a href="Contact.html">Contact</a>
         </nav>
 
         <div class="icons">
@@ -44,34 +46,18 @@
         </div>
 
         <div class="cart-items-container">
-            <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/Citrus Splash.png" alt="Citrus Splash">
-                <div class="content">
-                    <h3>Cart Item 01</h3>
-                    <div class="price">$4.99/-</div>
-                </div>
+            <div class="cart-header">
+                <h2>Your Cart</h2>
             </div>
-
-            <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/Berry Chocolate.png" alt="Betty Chocolate">
-                <div class="content">
-                    <h3>Cart Item 02</h3>
-                    <div class="price">$7.50/-</div>
-                </div>
+            <div id="cart-content">
+                <p class="empty-cart">Your cart is empty!</p>
             </div>
-
-            <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/Fresh Apple.png" alt="Fresh Apple">
-                <div class="content">
-                    <h3>Cart Item 03</h3>
-                    <div class="price">$2.00/-</div>
-                </div>
+            <div class="cart-footer">
+                <p id="total-price">Total: $0.00</p>
+                <button class="button" disabled>Checkout</button>
             </div>
-            <a href="#" class="button">checkout now</a>
         </div>
+        
     </header>
 
     <section class="banner-section">
@@ -85,7 +71,7 @@
                                 <h1>100% Organic</h1>
                                 <h3>Fresh & Natural Farm Product</h3>
                                 <p>Enjoy the freshness and purity of natural farm products, carefully grown and delivered straight to your table</p>
-                                <a href="product.html" class="button">All Products</a>
+                                <a href="/Menu Page/Menu.html" class="button">All Products</a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +81,7 @@
                                 <h1>100% Organic</h1>
                                 <h3>Fresh & Natural Farm Product</h3>
                                 <p>Enjoy the freshness and purity of natural farm products, carefully grown and delivered straight to your table.</p>
-                                <a href="/product.html" class="button">All Products</a>
+                                <a href="/Menu Page/Menu.html" class="button">All Products</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +92,7 @@
     
     <section class="features-section">
         <div class="features-container">
-            <a href="/contact" class="feature-card"> 
+            <a href="/Contact Page/Contact.html" class="feature-card"> 
                 <div class="feature-icon">
                     <i class="fas fa-comments"></i>
                 </div>
@@ -124,7 +110,7 @@
                 </div>
                 <p class="feature-text">Fresh & Healthy</p>
             </div>
-            <a href="/gallery" class="feature-card">
+            <a href="/Gallary Page/Gallary.html" class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-apple-alt"></i>
                 </div>

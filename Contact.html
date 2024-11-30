@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>Contact Page</title>
+    <!--Normalize.css-->
+    <link rel="stylesheet" href="Normalize.css">
     <!-- CSS File Link -->
     <link rel="stylesheet" href="style.css">
      <!-- Google Fonts Link-->
@@ -20,16 +22,16 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <img src="/Logo.png" alt="Farm Fresh Bites">
         </a>
 
         <nav class="navbar">
-            <a href="/Home Page/index.html">Home</a>
-            <a href="/About Page/About.html">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Gallary.html">Gallery</a>
+            <a href="Contact.html">Contact</a>
         </nav>
 
         <div class="icons">
@@ -44,63 +46,59 @@
         </div>
 
         <div class="cart-items-container">
-            <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/Citrus Splash.png" alt="Citrus Splash">
-                <div class="content">
-                    <h3>Cart Item 01</h3>
-                    <div class="price">$4.99/-</div>
-                </div>
+            <div class="cart-header">
+                <h2>Your Cart</h2>
             </div>
-
-            <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/Berry Chocolate.png" alt="Betty Chocolate">
-                <div class="content">
-                    <h3>Cart Item 02</h3>
-                    <div class="price">$7.50/-</div>
-                </div>
+            <div id="cart-content">
+                <p class="empty-cart">Your cart is empty!</p>
             </div>
-
-            <div class="cart-items">
-                <span class="fas fa-times"></span>
-                <img src="/Fresh Apple.png" alt="Fresh Apple">
-                <div class="content">
-                    <h3>Cart Item 03</h3>
-                    <div class="price">$2.00/-</div>
-                </div>
+            <div class="cart-footer">
+                <p id="total-price">Total: $0.00</p>
+                <button class="button" disabled>Checkout</button>
             </div>
-            <a href="#" class="button">checkout now</a>
         </div>
     </header>
 
-    <section class="about-us-section">
-        <div class="about-us-header">
-            <h1>About Us</h1>
-        </div>
-        <div class="about-us-text">
-            <h3>About Us</h3>
-            <p>bhah......................</p>
-        </div>
-        <div class="about-us-container">
-            <div class="about-section">
-                <div class="about-photo">
-                    <img src="/About Background.png" alt="First Photo">
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+    </div>
+    
+    <div class="subheading">
+        <h2>Get In Touch</h2>
+        <p>Feel free to contact us for any queries or feedback. We are here to help you.</p>
+    </div>
+    
+    <div class="contact-container">
+        <div class="form-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <input type="text" id="name" placeholder="Your Name *" required>
+                    <input type="email" id="email" placeholder="Your Email *" required>
                 </div>
-                <div class="about-text">
-                    <p>Blah (Text beside the first photo)</p>
+                <div class="form-row">
+                    <input type="text" id="address" placeholder="Your Address *" required>
+                    <input type="tel" id="phone" placeholder="Your Phone *" required>
                 </div>
+                <textarea id="message" placeholder="Your Message..." rows="5" required></textarea>
+                <button type="submit" class="button">Sent Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>Any Questions? Call Us<br>Phone Number</p>
             </div>
-            <div class="about-section">
-                <div class="about-photo">
-                    <img src="/About Background.png" alt="Second Photo">
-                </div>
-                <div class="about-text">
-                    <p>Blah (Text beside the second photo)</p>
-                </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>Any Questions? Email Us<br>Email</p>
             </div>
         </div>
-    </section>
+    </div>
+    
+    <div id="successMessage" style="display:none; color: green; text-align: center;">
+        Thank you for your message. We will get back to you soon!
+    </div>
+    
 
     <footer class="footer">
         <div class="footer-container">
