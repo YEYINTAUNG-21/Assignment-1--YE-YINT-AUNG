@@ -572,13 +572,13 @@ body {
 }
 
 .bs-product .bs-product-container .box h3 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 0.5rem 0;
     color: #333;
 }
 
 .bs-product .bs-product-container .box .price {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #777;
     margin-bottom: 10px;
 }
@@ -598,11 +598,11 @@ body {
     }
 
     .bs-product .bs-product-container .box h3 {
-        font-size: 1rem; 
+        font-size: 2rem; 
     }
 
     .bs-product .bs-product-container .box .price {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
@@ -620,11 +620,11 @@ body {
     }
 
     .bs-product .bs-product-container .box h3 {
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
 
     .bs-product .bs-product-container .box .price {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -898,7 +898,7 @@ body {
 }
 
 .about-us-text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     max-width: 800px;
     margin-top: 10px;
@@ -982,11 +982,11 @@ body {
     }
 
     .about-us-text h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .about-us-text p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .about-us-section:nth-child(2) {
