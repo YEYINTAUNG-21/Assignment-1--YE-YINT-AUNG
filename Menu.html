@@ -23,7 +23,7 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="/Logo.png" alt="Farm Fresh Bites">
+            <img src="/Images/Logo.png" alt="Farm Fresh Bites">
         </a>
 
         <nav class="navbar">
@@ -66,101 +66,128 @@
     <section class="menu-section">
         <!-- Category Tabs -->
         <div class="category-tabs">
-            <button class="tab-button active" onclick="showCategory('category1')">Category 1</button>
-            <button class="tab-button" onclick="showCategory('category2')">Category 2</button>
-            <button class="tab-button" onclick="showCategory('category3')">Category 3</button>
+            <button class="tab-button active" onclick="showCategory('category1')">Fresh Juice</button>
+            <button class="tab-button" onclick="showCategory('category2')">Organic Fruit Bowl</button>
+            <button class="tab-button" onclick="showCategory('category3')">Organic Fruit</button>
             <button class="tab-button" onclick="showCategory('all')">See All</button>
         </div>
     
         <div id="category1" class="menu-grid active-category">
-            <div class="menu-item" data-id="1" data-name="Citrus Splash" data-price="19.99">
-                <div class="product-image" style="background-image: url('/Citrus Splash.png');"></div>
-                <h3 class="product-name">Product 1</h3>
-                <p class="product-price">$19.99</p>
+            <div class="menu-item" data-id="1" data-name="Citrus Splash" data-price="4.99">
+                <div class="product-image" style="background-image: url('/Images/Citrus Splash.png');"></div>
+                <h3 class="product-name">Citrus Splash</h3>
+                <p class="product-price">$4.99</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Apple.png');"></div>
-                <h3 class="product-name">Product 2</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data-id="2" data-name="Troical Treat" data-price="5.99">
+                <div class="product-image" style="background-image: url('/Images/Tropical Treat.png');"></div>
+                <h3 class="product-name">Tropical Treat</h3>
+                <p class="product-price">$5.99</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Apple.png');"></div>
-                <h3 class="product-name">Product 2</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data-id="3" data-name="Berry Medley" data-price="6.49">
+                <div class="product-image" style="background-image: url('/Images/Berry Medley.png');"></div>
+                <h3 class="product-name">Berry Medley</h3>
+                <p class="product-price">$6.49</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
         </div>
     
-        <!-- Category 2 -->
         <div id="category2" class="menu-grid">
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Berry Chocolate.png');"></div>
-                <h3 class="product-name">Product 3</h3>
-                <p class="product-price">$29.99</p>
+            <div class="menu-item" data-id="4" data-name="Berry Chocolate Bowl" data-price="7.50">
+                <div class="product-image" style="background-image: url('/Images/Berry Chocolate.png');"></div>
+                <h3 class="product-name">Berry Chocolate Bowl</h3>
+                <p class="product-price">$7.50</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Apple.png');"></div>
-                <h3 class="product-name">Product 2</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data-id="5" data-name="Sunshine Bowl" data-price="8.00">
+                <div class="product-image" style="background-image: url('/Images/Sunshine Bowl.jpg');"></div>
+                <h3 class="product-name">Sunshine Bowl</h3>
+                <p class="product-price">$8.00</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Apple.png');"></div>
-                <h3 class="product-name">Product 2</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data-id="6" data-name="Tropical Dream Bowl" data-price="7.99">
+                <div class="product-image" style="background-image: url('/Images/Tropical Dream Bowl.png');"></div>
+                <h3 class="product-name">Tropical Dream Bowl</h3>
+                <p class="product-price">$7.99</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
         </div>
     
-        <!-- Category 3 -->
         <div id="category3" class="menu-grid">
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Fresh Apple.png');"></div>
-                <h3 class="product-name">Product 4</h3>
-                <p class="product-price">$34.99</p>
+            <div class="menu-item" data="7" data-name="Fresh Apple" data-price="4.40">
+                <div class="product-image" style="background-image: url('/Images/Apple.png');"></div>
+                <h3 class="product-name">Fresh Apple</h3>
+                <p class="product-price">$4.40/Kg</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Apple.png');"></div>
-                <h3 class="product-name">Product 2</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data="8" data-name="Sweet Orange" data-price="5.50">
+                <div class="product-image" style="background-image: url('/Images/Sweet Orange.jpg');"></div>
+                <h3 class="product-name">Sweet Orange</h3>
+                <p class="product-price">$5.50/Kg</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('/Apple.png');"></div>
-                <h3 class="product-name">Product 2</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data="9" data-name="Seasonal Mango" data-price="7.70">
+                <div class="product-image" style="background-image: url('/Images/Seasonal Mango.jpeg');"></div>
+                <h3 class="product-name">Seasonal Mango</h3>
+                <p class="product-price">$7.70/Kg</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
         </div>
     
-        <!-- See All -->
         <div id="all" class="menu-grid">
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('images/product1.jpg');"></div>
-                <h3 class="product-name">Product 1 (Category 1)</h3>
-                <p class="product-price">$19.99</p>
+            <div class="menu-item" data-id="1" data-name="Citrus Splash" data-price="4.99">
+                <div class="product-image" style="background-image: url('/Images/Citrus Splash.png');"></div>
+                <h3 class="product-name">Citrus Splash</h3>
+                <p class="product-price">$4.99</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('images/product2.jpg');"></div>
-                <h3 class="product-name">Product 2 (Category 1)</h3>
-                <p class="product-price">$24.99</p>
+            <div class="menu-item" data-id="2" data-name="Troical Treat" data-price="5.99">
+                <div class="product-image" style="background-image: url('/Images/Tropical Treat.png');"></div>
+                <h3 class="product-name">Tropical Treat</h3>
+                <p class="product-price">$5.99</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('images/product3.jpg');"></div>
-                <h3 class="product-name">Product 3 (Category 2)</h3>
-                <p class="product-price">$29.99</p>
+            <div class="menu-item" data-id="3" data-name="Berry Medley" data-price="6.49">
+                <div class="product-image" style="background-image: url('/Images/Berry Medley.png');"></div>
+                <h3 class="product-name">Berry Medley</h3>
+                <p class="product-price">$6.49</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
-            <div class="menu-item">
-                <div class="product-image" style="background-image: url('images/product4.jpg');"></div>
-                <h3 class="product-name">Product 4 (Category 3)</h3>
-                <p class="product-price">$34.99</p>
+            <div class="menu-item" data-id="4" data-name="Berry Chocolate Bowl" data-price="7.50">
+                <div class="product-image" style="background-image: url('/Images/Berry Chocolate.png');"></div>
+                <h3 class="product-name">Berry Chocolate Bowl</h3>
+                <p class="product-price">$7.50</p>
+                <button class="add-to-cart-button">Add To Cart</button>
+            </div>
+            <div class="menu-item" data-id="5" data-name="Sunshine Bowl" data-price="8.00">
+                <div class="product-image" style="background-image: url('/Images/Sunshine Bowl.jpg');"></div>
+                <h3 class="product-name">Sunshine Bowl</h3>
+                <p class="product-price">$8.00</p>
+                <button class="add-to-cart-button">Add To Cart</button>
+            </div>
+            <div class="menu-item" data-id="6" data-name="Tropical Dream Bowl" data-price="7.99">
+                <div class="product-image" style="background-image: url('/Images/Tropical Dream Bowl.png');"></div>
+                <h3 class="product-name">Tropical Dream Bowl</h3>
+                <p class="product-price">$7.99</p>
+                <button class="add-to-cart-button">Add To Cart</button>
+            </div>
+            <div class="menu-item" data="7" data-name="Fresh Apple" data-price="4.40">
+                <div class="product-image" style="background-image: url('/Images/Apple.png');"></div>
+                <h3 class="product-name">Fresh Apple</h3>
+                <p class="product-price">$4.40/Kg</p>
+                <button class="add-to-cart-button">Add To Cart</button>
+            </div>
+            <div class="menu-item" data="8" data-name="Sweet Orange" data-price="5.50">
+                <div class="product-image" style="background-image: url('/Images/Sweet Orange.jpg');"></div>
+                <h3 class="product-name">Sweet Orange</h3>
+                <p class="product-price">$5.50/Kg</p>
+                <button class="add-to-cart-button">Add To Cart</button>
+            </div>
+            <div class="menu-item" data="9" data-name="Seasonal Mango" data-price="7.70">
+                <div class="product-image" style="background-image: url('/Images/Seasonal Mango.jpeg');"></div>
+                <h3 class="product-name">Seasonal Mango</h3>
+                <p class="product-price">$7.70/Kg</p>
                 <button class="add-to-cart-button">Add To Cart</button>
             </div>
         </div>

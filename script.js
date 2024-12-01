@@ -57,18 +57,42 @@ function openModal(src, alt) {
 
 document.getElementById('newsletterForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    const emailInput = document.querySelector('.newsletter-input');
+
+    const emailInput = document.querySelector('.newsletter-input'); 
+
     if (emailInput.value !== '') {
-        const messageDiv = document.getElementById('subscriptionMessage');
+        const messageDiv = document.getElementById('subscriptionMessage'); 
+
+        messageDiv.textContent = "Subscription successful! Thank you."; 
         messageDiv.style.display = 'block'; 
+
+
         setTimeout(function() {
             messageDiv.style.display = 'none'; 
-        }, 15000);
+        }, 5000);
+
         emailInput.value = ''; 
     } else {
         alert('Please enter your email.'); 
     }
 });
+
+// Function to show category //
+
+function showCategory(categoryId) {
+
+    document.querySelectorAll('.menu-grid').forEach(grid => {
+        grid.classList.remove('active-category');
+    });
+
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(categoryId).classList.add('active-category');
+
+    event.target.classList.add('active');
+}
 
 // Function to show cart product //
 
@@ -172,6 +196,7 @@ function removeFromCart(event) {
 document.querySelectorAll('.add-to-cart-button').forEach(button => {
     button.addEventListener('click', addToCart);
 });
+
 
 /* Contact section */
 
